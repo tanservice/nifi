@@ -98,8 +98,8 @@
         <maven.surefire.arguments />
         <!-- Disable maven-site-plugin from parent POM -->
         <maven.site.skip>true</maven.site.skip>
-        <docker.jdk.image.name>bellsoft/liberica-openjdk-debian</docker.jdk.image.name>
-        <docker.jre.image.name>bellsoft/liberica-openjre-debian</docker.jre.image.name>
+        <docker.jdk.image.name>tanservice/eclipse-temurin-jdk</docker.jdk.image.name>
+        <docker.jre.image.name>tanservice/eclipse-temurin-jre</docker.jre.image.name>
         <docker.image.tag>21</docker.image.tag>
         <node.version>v22.1.0</node.version>
         <frontend.mvn.plugin.version>1.15.1</frontend.mvn.plugin.version>
@@ -153,7 +153,7 @@
         <mockito.version>5.15.2</mockito.version>
         <netty.3.version>3.10.6.Final</netty.3.version>
         <snakeyaml.version>2.3</snakeyaml.version>
-        <netty.4.version>4.1.117.Final</netty.4.version>
+        <netty.4.version>4.1.118.Final</netty.4.version>
         <servlet-api.version>6.1.0</servlet-api.version>
         <spring.version>6.2.2</spring.version>
         <spring.security.version>6.4.2</spring.security.version>
@@ -406,6 +406,11 @@
                 <groupId>com.jayway.jsonpath</groupId>
                 <artifactId>json-path</artifactId>
                 <version>${com.jayway.jsonpath.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.minidev</groupId>
+                <artifactId>json-smart</artifactId>
+                <version>2.5.2</version>
             </dependency>
             <dependency>
                 <groupId>com.amazonaws</groupId>
